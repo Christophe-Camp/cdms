@@ -1,16 +1,48 @@
-# 🎶 Concert dans mon salon
+## 🎶 Concert dans mon salon
+Concert dans mon salon est une plateforme web qui facilite l'organisation de concerts privés en mettant en relation des artistes avec des organisateurs particuliers ou professionnels.
+L’objectif est de diffuser la musique vivante dans des lieux intimes, comme les salons, jardins ou locaux d’entreprise, en dehors des circuits traditionnels.
 
-**Concert dans mon salon** est une application web qui permet aux organisateurs d'événements de découvrir des artistes locaux, consulter leurs prestations, et les contacter directement via une messagerie intégrée.
 
-## 🛠️ Technologies utilisées
+##  Objectif
+Cette plateforme vise à :
+Valoriser les artistes locaux en leur offrant plus de visibilité.
+Permettre aux particuliers ou entreprises d’organiser des concerts chez eux facilement.
+Centraliser les échanges grâce à un système de messagerie intégré.
 
-- PHP (backend)
-- HTML5, CSS3, Bootstrap 5 (frontend)
-- JavaScript
-- MySQL 
-- [Bootstrap Icons](https://icons.getbootstrap.com/) pour l'interface
 
-## 📁 Structure du projet
+##  Fonctionnalités principales
+👤 Utilisateurs
+Création de comptes pour artistes et organisateurs.
+Les profils artistes sont publics, ceux des organisateurs sont confidentiels (accessibles uniquement aux artistes qu'ils contactent).
+
+📋 Artistes
+Présentation libre : nom de scène, style de musique, présentation du groupe, offre de prestation, régions couvertes, prix.
+Visualisation publique de toutes les fiches artistes.
+
+🔍 Recherche
+Recherche d’artistes par type de musique et région.
+
+💬 Messagerie
+Envoi de messages via une messagerie interne.
+Mise à jour automatique des nouveaux messages.
+Notifications dynamiques : compteur de messages non lus dans l’entête + changement d’onglet si nouveaux messages.
+Archivage des conversations.
+
+⚙️ Gestion du profil
+Modification du profil.
+Possibilité d’ajouter une adresse mail pour recevoir les messages par email.
+
+
+##  Technologies utilisées
+
+Backend	PHP
+Frontend	HTML5, CSS3, Bootstrap 5
+Dynamique	JavaScript
+Base de données	MySQL
+UI Icons	Bootstrap Icons
+
+
+##  Structure du projet
 
 /
 ├── css/
@@ -70,10 +102,47 @@
 └── validation_connexion.php
 
 
-## ✨ Fonctionnalités
+##  Fonctionnalités techniques détaillées
 
-- 🔍 Affichage de la liste des **artistes** (nom de scène, type de musique, description, etc.)
-- 💼 Affichage de la **prestation proposée** (région, prix, offre détaillée)
-- 🧩 Affichage conditionnel d’un bouton **Contacter l’artiste** si l’utilisateur est connecté comme organisateur
-- 🔄 Fonction "Voir plus" pour charger dynamiquement plus d’artistes ou de prestations
-- 📬 Intégration d’un système de **messagerie interne** via `messagerie.php`
+ Chargement dynamique des listes d'artistes ("Voir plus")
+ Affichage conditionnel des boutons selon le rôle de l'utilisateur
+ Messagerie AJAX : envoi et réception sans rechargement
+ Système de notification automatique dans l'entête + favicon/onglet
+ Sécurité : gestion de sessions, distinction entre rôles utilisateur
+
+
+##  Cahier des charges (résumé)
+
+Le projet a été développé pour une start-up visant à favoriser les concerts privés.
+Le site est une première version web, une application mobile est prévue en second temps.
+Artistes : création de profil public avec description libre
+Organisateurs : création de profil privé visible uniquement aux artistes contactés
+Recherche d’artistes par ville/type
+Messagerie intégrée, notifications en direct, archivage des conversations
+Notifications par mail (optionnel)
+Notifications dynamiques dans l’interface utilisateur
+
+
+## ✅ État d'avancement
+
+ Création d'un compte artiste/organisateur
+ Liste et recherche d’artistes
+ Envoi de messages via messagerie
+ Notification de messages non lus
+ Archivage des conversations
+ Interface responsive avec Bootstrap
+
+
+##  Propositions d’évolutions
+
+Application mobile (iOS/Android)
+Évaluation et avis sur les artistes
+Système de réservation/calendrier
+Upload de morceaux ou extraits musicaux
+Revoir l'écran d'accueil qui n'est pas très intuitif
+
+Déploiement Le site est disponible en ligne ici : https://cdms-chca.play.mywebecom.ovh/accueil.php
+
+
+git https://github.com/Christophe-Camp/generation-ceramic.git
+Auteurs 👤 Christophe-Camp

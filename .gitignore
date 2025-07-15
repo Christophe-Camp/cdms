@@ -1,0 +1,13 @@
+# Dossiers à ignorer
+.vscode/
+node_modules/
+dist/
+
+# Fichiers sensibles
+.env
+*.env
+*.json
+*.sqlite
+
+# Par exemple, si tu stockes les accès à ta BDD dans un fichier init :
+init.php
