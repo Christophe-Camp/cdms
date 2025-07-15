@@ -144,5 +144,5 @@ Revoir l'écran d'accueil qui n'est pas très intuitif
 Déploiement Le site est disponible en ligne ici : https://cdms-chca.play.mywebecom.ovh/accueil.php
 
 
-git https://github.com/Christophe-Camp/generation-ceramic.git
+git https://github.com/Christophe-Camp/cdms
 Auteurs 👤 Christophe-Camp
